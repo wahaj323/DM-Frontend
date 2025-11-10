@@ -29,6 +29,13 @@ const Landing = () => {
   // REPLACE image paths with your actual screenshot paths
   const platformFeatures = [
     {
+      title: "Progress Tracking",
+      description:
+        "Monitor your learning journey with detailed analytics and achievements",
+      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758672/Screenshot_2025-11-09_1.12.32_PM_yeydhd.png", // CHANGE THIS
+      color: "from-teal-500 to-teal-600",
+    },
+    {
       title: "Interactive Course Lessons",
       description:
         "Beautifully designed lessons with rich content blocks, dialogues, and grammar explanations",
@@ -63,13 +70,7 @@ const Landing = () => {
       image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758675/Screenshot_2025-11-09_1.15.20_PM_ric5oe.png", // CHANGE THIS
       color: "from-orange-500 to-orange-600",
     },
-    {
-      title: "Progress Tracking",
-      description:
-        "Monitor your learning journey with detailed analytics and achievements",
-      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758672/Screenshot_2025-11-09_1.12.32_PM_yeydhd.png", // CHANGE THIS
-      color: "from-teal-500 to-teal-600",
-    },
+    
   ];
 
   const features = [
@@ -211,11 +212,7 @@ const Landing = () => {
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-600 px-4">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>No credit card required</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Free trial available</span>
+                <span>Free Demo Class available</span>
               </div>
             </div>
           </div>
