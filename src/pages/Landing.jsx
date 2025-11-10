@@ -20,6 +20,7 @@ import {
   Mail,
   X,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Landing = () => {
   const [currentFeature, setCurrentFeature] = useState(0);
@@ -31,42 +32,42 @@ const Landing = () => {
       title: "Interactive Course Lessons",
       description:
         "Beautifully designed lessons with rich content blocks, dialogues, and grammar explanations",
-      image: "/images/lesson-preview.jpg", // CHANGE THIS
+      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758680/Screenshot_2025-11-09_1.13.36_PM_v7spzy.png", // CHANGE THIS
       color: "from-blue-500 to-blue-600",
     },
     {
       title: "Text-to-Speech Pronunciation",
       description:
         "Listen to authentic German pronunciation for every word and sentence",
-      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1761896295/deutschmeister/profiles/b4intcf7ds1io8zvqsee.jpg", // CHANGE THIS
+      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758661/Screenshot_2025-11-09_1.14.48_PM_rx2nes.png", // CHANGE THIS
       color: "from-purple-500 to-purple-600",
     },
     {
       title: "AI-Powered Learning Assistant",
       description:
         "Get instant answers to grammar questions and personalized learning support",
-      image: "/images/ai-preview.jpg", // CHANGE THIS
+      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758659/Screenshot_2025-11-09_1.15.01_PM_xoelnh.png", // CHANGE THIS
       color: "from-pink-500 to-pink-600",
     },
     {
       title: "Interactive Quizzes",
       description:
         "Test your knowledge with engaging quizzes and get instant feedback",
-      image: "/images/quiz-preview.jpg", // CHANGE THIS
+      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762759667/Screenshot_2025-11-10_12.02.41_PM_jignzr.png", // CHANGE THIS
       color: "from-green-500 to-green-600",
     },
     {
       title: "Personal Dictionary",
       description:
         "Build your vocabulary with smart flashcards and spaced repetition",
-      image: "/images/dictionary-preview.jpg", // CHANGE THIS
+      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758675/Screenshot_2025-11-09_1.15.20_PM_ric5oe.png", // CHANGE THIS
       color: "from-orange-500 to-orange-600",
     },
     {
       title: "Progress Tracking",
       description:
         "Monitor your learning journey with detailed analytics and achievements",
-      image: "/images/progress-preview.jpg", // CHANGE THIS
+      image: "https://res.cloudinary.com/dmdemru8r/image/upload/v1762758672/Screenshot_2025-11-09_1.12.32_PM_yeydhd.png", // CHANGE THIS
       color: "from-teal-500 to-teal-600",
     },
   ];
@@ -132,7 +133,7 @@ const Landing = () => {
   };
 
   // REPLACE with your WhatsApp Business number (with country code, no + or spaces)
-  const whatsappNumber = "923001234567"; // Example: 923001234567
+  const whatsappNumber = "923043284369"; // Example: 923001234567
   const whatsappMessage = encodeURIComponent(
     "Hi! I'm interested in learning German with DeutschMeister."
   );
@@ -148,7 +149,7 @@ const Landing = () => {
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 group"
         aria-label="Chat on WhatsApp"
       >
-        <MessageCircle className="w-7 h-7" />
+        <FaWhatsapp className="w-7 h-7 text-white" />
         <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
           Chat with us on WhatsApp
         </span>
@@ -228,7 +229,7 @@ const Landing = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4 sm:gap-6">
                 <div className="p-4 sm:p-5 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl shadow-lg flex-shrink-0">
-                  <MessageCircle className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+                  <FaWhatsapp className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
                 <div className="text-center md:text-left">
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
@@ -246,7 +247,7 @@ const Landing = () => {
                 rel="noopener noreferrer"
                 className="flex-shrink-0 inline-flex items-center gap-2 sm:gap-3 bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
-                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
+                <FaWhatsapp className="w-5 h-5 sm:w-6 sm:h-6" />
                 Chat on WhatsApp
               </a>
             </div>
