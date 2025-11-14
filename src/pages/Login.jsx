@@ -52,9 +52,11 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex bg-gradient-to-r from-primary-50 via-white to-primary-100">
-      {/* Left Section - Login Form */}
+
+      {/* Left Section */}
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-12 lg:px-24 bg-white shadow-xl z-10 relative">
         <div className="max-w-md w-full space-y-8 mx-auto">
+
           {/* Header */}
           <div className="text-left">
             <Link to="/" className="inline-flex items-center space-x-2 mb-6">
@@ -69,7 +71,7 @@ const Login = () => {
             </p>
           </div>
 
-          {/* Form */}
+          {/* Login Form */}
           <form onSubmit={handleSubmit} className="mt-6 space-y-6">
             {error && (
               <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded">
@@ -111,7 +113,7 @@ const Login = () => {
               </div>
             </div>
 
-            {/* Submit Button */}
+            {/* Submit */}
             <button
               type="submit"
               disabled={loading}
@@ -121,7 +123,7 @@ const Login = () => {
             </button>
           </form>
 
-          {/* Sign Up Link */}
+          {/* Signup */}
           <div className="mt-6 text-center">
             <p className="text-gray-600">
               Don’t have an account?{' '}
@@ -133,16 +135,24 @@ const Login = () => {
         </div>
       </div>
 
-      {/* Right Section - Illustration */}
-      <div className="hidden md:flex w-1/2 bg-gradient-to-br from-primary-600 to-primary-400 items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="relative z-10 text-white text-center px-10">
-          <h2 className="text-4xl font-bold mb-4">Master German, Step by Step 🇩🇪</h2>
-          <p className="text-lg opacity-90">
-            Join <span className="font-semibold">DeutschMeister</span> and start your A1 journey to fluency with confidence.
-          </p>
-        </div>
+      {/* Right Section — Image without red opacity */}
+      <div className="hidden md:flex w-1/2 relative items-center justify-center overflow-hidden bg-black/10">
+
+        {/* Background image — CLEAR, NO RED OPACITY */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://res.cloudinary.com/dmdemru8r/image/upload/v1763122138/ChatGPT_Image_Nov_14_2025_05_08_41_PM_ndzx39.png')",
+          }}
+        ></div>
+
+        {/* Optional subtle dark overlay for readability */}
+        <div className="absolute inset-0 bg-black/5"></div>
+
+        
       </div>
+
     </div>
   );
 };
