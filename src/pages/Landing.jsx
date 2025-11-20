@@ -164,7 +164,7 @@ const Landing = () => {
 
   // Placeholder images - REPLACE with your actual images
   const myLogo = mylogo;
-  const teacherPhoto = "https://scontent.fkhi21-1.fna.fbcdn.net/v/t39.30808-6/579822093_4292553557729951_1456120427787537131_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEr-qlC96pixPA6C-9ZJ-H5RUG2ckPrQnFFQbZyQ-tCcQvJri0LiD-F_CrOdHIuwm3DKKP3eVCbu3yX5hNJM-Gi&_nc_ohc=cRVqB1aMZwAQ7kNvwE9uYP0&_nc_oc=Adm7iVSuOoCye9Mp0e6EQCs-YFRdDyUH65mdyyKiDWscabioHTp4eVF_VFydPG3tIw0&_nc_zt=23&_nc_ht=scontent.fkhi21-1.fna&_nc_gid=bEgT4BbI1OaXWQkj3X0gkw&oh=00_Afhjjq1sGUbPwiNjb9zCkCThjnb28QrTihbvCAG_dzZB8Q&oe=691CEBEF";
+  const teacherPhoto = "https://res.cloudinary.com/dmdemru8r/image/upload/v1763631411/579822093_4292553557729951_1456120427787537131_n_txozdy.jpg";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
